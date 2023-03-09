@@ -1,0 +1,13 @@
+{
+    "backgroundCover.imagePath": "e:\\微信图片_20230102154314.jpg",
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "cmath": "cpp",
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "iomanip": "cpp",
+        "new": "cpp",
+        "algorithm": "cpp"
+    }
+}
