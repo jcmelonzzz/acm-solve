@@ -1,3 +1,6 @@
+//题目大意：一个字符串，查找既是前缀又是后缀的字符串，统计长度，升序输出
+//大概思路，前后缀？其实就是前后对比嘛，定义一组双指针，来指定位置，可以的就输出，毕竟是从小到大开始遍历的，其他的就照常hash就行
+
 #include <iostream>
 #include <cstring>
 #include <string>
@@ -25,7 +28,7 @@ int main()
         
         int len = strlen(a);
         Hash[0] = 0;
-        for(int i=0;i<len;i++)Hash[i+1] = Hash[i] * base + a[i] - 'a' + 1;//正方向
+        for(int i=0;i<len;i++)Hash[i+1] = Hash[i] * base + a[i] - 'a' + 1;
         int l=1,r=len;
         for(;l<=len;){
             if(Hash[l] == Hash[len] - Hash[r-1]*p[l])cout << l << " ";
